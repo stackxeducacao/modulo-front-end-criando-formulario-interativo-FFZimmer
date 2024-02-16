@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Básico</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <!-- Formulário Básico -->
+    <form action="#" method="post">
+        <!-- Nome -->
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <!-- E-mail -->
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+
+        <!-- Idade -->
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade" name="idade">
+
+        <!-- Caixa de Seleção -->
+        <label for="interesse">Interesse:</label>
+        <select id="interesse" name="interesse">
+            <option value="web">Desenvolvimento Web</option>
+            <option value="mobile">Desenvolvimento Mobile</option>
+            <option value="data">Ciência de Dados</option>
+        </select>
+
+        <!-- Botão de Envio -->
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
